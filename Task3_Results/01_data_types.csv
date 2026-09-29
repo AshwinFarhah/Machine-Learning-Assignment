@@ -1,0 +1,23 @@
+Feature,Data Type
+Diabetes_binary,float64
+HighBP,float64
+HighChol,float64
+CholCheck,float64
+BMI,float64
+Smoker,float64
+Stroke,float64
+HeartDiseaseorAttack,float64
+PhysActivity,float64
+Fruits,float64
+Veggies,float64
+HvyAlcoholConsump,float64
+AnyHealthcare,float64
+NoDocbcCost,float64
+GenHlth,float64
+MentHlth,float64
+PhysHlth,float64
+DiffWalk,float64
+Sex,float64
+Age,float64
+Education,float64
+Income,float64

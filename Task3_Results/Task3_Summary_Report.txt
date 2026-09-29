@@ -1,0 +1,120 @@
+TASK 3 - CRITICAL ANALYSIS OF DATA QUALITY
+CDC DIABETES HEALTH INDICATORS DATASET
+======================================================================
+
+DATASET OVERVIEW
+----------------------------------------------------------------------
+Number of observations: 253,680
+Number of attributes: 22
+Duplicate records: 24,206
+Duplicate percentage: 9.5419%
+
+MISSING VALUES
+----------------------------------------------------------------------
+Total missing values: 0
+No missing values detected.
+
+CLASS DISTRIBUTION
+----------------------------------------------------------------------
+ Class  Count  Percentage
+   0.0 218334     86.0667
+   1.0  35346     13.9333
+
+Imbalance ratio: 6.1770
+
+SKEWNESS
+----------------------------------------------------------------------
+             Feature  Skewness            Distribution
+     Diabetes_binary    2.0830           Highly skewed
+              HighBP    0.2869 Approximately symmetric
+            HighChol    0.3071 Approximately symmetric
+           CholCheck   -4.8813           Highly skewed
+                 BMI    2.1220           Highly skewed
+              Smoker    0.2288 Approximately symmetric
+              Stroke    4.6573           Highly skewed
+HeartDiseaseorAttack    2.7787           Highly skewed
+        PhysActivity   -1.1955           Highly skewed
+              Fruits   -0.5575       Moderately skewed
+             Veggies   -1.5922           Highly skewed
+   HvyAlcoholConsump    3.8541           Highly skewed
+       AnyHealthcare   -4.1811           Highly skewed
+         NoDocbcCost    2.9953           Highly skewed
+             GenHlth    0.4229 Approximately symmetric
+            MentHlth    2.7211           Highly skewed
+            PhysHlth    2.2074           Highly skewed
+            DiffWalk    1.7739           Highly skewed
+                 Sex    0.2403 Approximately symmetric
+                 Age   -0.3599 Approximately symmetric
+           Education   -0.7773       Moderately skewed
+              Income   -0.8913       Moderately skewed
+
+OUTLIERS
+----------------------------------------------------------------------
+             Feature   Q1   Q3  IQR  Lower Bound  Upper Bound  Outlier Count  Outlier Percentage
+     Diabetes_binary  0.0  0.0  0.0          0.0          0.0          35346             13.9333
+              HighBP  0.0  1.0  1.0         -1.5          2.5              0              0.0000
+            HighChol  0.0  1.0  1.0         -1.5          2.5              0              0.0000
+           CholCheck  1.0  1.0  0.0          1.0          1.0           9470              3.7330
+                 BMI 24.0 31.0  7.0         13.5         41.5           9847              3.8817
+              Smoker  0.0  1.0  1.0         -1.5          2.5              0              0.0000
+              Stroke  0.0  0.0  0.0          0.0          0.0          10292              4.0571
+HeartDiseaseorAttack  0.0  0.0  0.0          0.0          0.0          23893              9.4186
+        PhysActivity  1.0  1.0  0.0          1.0          1.0          61760             24.3456
+              Fruits  0.0  1.0  1.0         -1.5          2.5              0              0.0000
+             Veggies  1.0  1.0  0.0          1.0          1.0          47839             18.8580
+   HvyAlcoholConsump  0.0  0.0  0.0          0.0          0.0          14256              5.6197
+       AnyHealthcare  1.0  1.0  0.0          1.0          1.0          12417              4.8947
+         NoDocbcCost  0.0  0.0  0.0          0.0          0.0          21354              8.4177
+             GenHlth  2.0  3.0  1.0          0.5          4.5          12081              4.7623
+            MentHlth  0.0  2.0  2.0         -3.0          5.0          36208             14.2731
+            PhysHlth  0.0  3.0  3.0         -4.5          7.5          40949             16.1420
+            DiffWalk  0.0  0.0  0.0          0.0          0.0          42675             16.8224
+                 Sex  0.0  1.0  1.0         -1.5          2.5              0              0.0000
+                 Age  6.0 10.0  4.0          0.0         16.0              0              0.0000
+           Education  4.0  6.0  2.0          1.0          9.0              0              0.0000
+              Income  5.0  8.0  3.0          0.5         12.5              0              0.0000
+
+TOP CORRELATIONS
+----------------------------------------------------------------------
+      Feature 1 Feature 2  Correlation  Absolute Correlation
+        GenHlth  PhysHlth       0.5244                0.5244
+       PhysHlth  DiffWalk       0.4784                0.4784
+        GenHlth  DiffWalk       0.4569                0.4569
+      Education    Income       0.4491                0.4491
+        GenHlth    Income      -0.3700                0.3700
+       MentHlth  PhysHlth       0.3536                0.3536
+         HighBP       Age       0.3445                0.3445
+       DiffWalk    Income      -0.3201                0.3201
+        GenHlth  MentHlth       0.3017                0.3017
+         HighBP   GenHlth       0.3005                0.3005
+         HighBP  HighChol       0.2982                0.2982
+Diabetes_binary   GenHlth       0.2936                0.2936
+        GenHlth Education      -0.2849                0.2849
+       HighChol       Age       0.2723                0.2723
+       PhysHlth    Income      -0.2668                0.2668
+
+CONSISTENCY SUMMARY
+----------------------------------------------------------------------
+             Feature  Unique Values  Minimum  Maximum
+     Diabetes_binary              2      0.0      1.0
+              HighBP              2      0.0      1.0
+            HighChol              2      0.0      1.0
+           CholCheck              2      0.0      1.0
+                 BMI             84     12.0     98.0
+              Smoker              2      0.0      1.0
+              Stroke              2      0.0      1.0
+HeartDiseaseorAttack              2      0.0      1.0
+        PhysActivity              2      0.0      1.0
+              Fruits              2      0.0      1.0
+             Veggies              2      0.0      1.0
+   HvyAlcoholConsump              2      0.0      1.0
+       AnyHealthcare              2      0.0      1.0
+         NoDocbcCost              2      0.0      1.0
+             GenHlth              5      1.0      5.0
+            MentHlth             31      0.0     30.0
+            PhysHlth             31      0.0     30.0
+            DiffWalk              2      0.0      1.0
+                 Sex              2      0.0      1.0
+                 Age             13      1.0     13.0
+           Education              6      1.0      6.0
+              Income              8      1.0      8.0

@@ -1,0 +1,23 @@
+Feature,Skewness,Distribution
+Diabetes_binary,2.083,Highly skewed
+HighBP,0.2869,Approximately symmetric
+HighChol,0.3071,Approximately symmetric
+CholCheck,-4.8813,Highly skewed
+BMI,2.122,Highly skewed
+Smoker,0.2288,Approximately symmetric
+Stroke,4.6573,Highly skewed
+HeartDiseaseorAttack,2.7787,Highly skewed
+PhysActivity,-1.1955,Highly skewed
+Fruits,-0.5575,Moderately skewed
+Veggies,-1.5922,Highly skewed
+HvyAlcoholConsump,3.8541,Highly skewed
+AnyHealthcare,-4.1811,Highly skewed
+NoDocbcCost,2.9953,Highly skewed
+GenHlth,0.4229,Approximately symmetric
+MentHlth,2.7211,Highly skewed
+PhysHlth,2.2074,Highly skewed
+DiffWalk,1.7739,Highly skewed
+Sex,0.2403,Approximately symmetric
+Age,-0.3599,Approximately symmetric
+Education,-0.7773,Moderately skewed
+Income,-0.8913,Moderately skewed
