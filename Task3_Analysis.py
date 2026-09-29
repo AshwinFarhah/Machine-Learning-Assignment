@@ -12,13 +12,10 @@ import matplotlib.pyplot as plt
 # 1. SETTINGS
 # ============================================================
 
-# CHANGE THIS if your dataset has a different filename
 DATA_FILE = "diabetes_binary_health_indicators_BRFSS2015.csv"
 
-# Folder where all results will be saved
 OUTPUT_FOLDER = "Task3_Results"
 
-# Target variable
 TARGET = "Diabetes_binary"
 
 
